@@ -18,16 +18,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tpmcaloon.prototype"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.NFC"
+      ],
+      "package": "com.tpmcaloon.prototype"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "react-native-nfc-manager"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "48d76f4a-d476-449e-9585-a67b44f85c21"
+      }
     }
   }
 }
